@@ -39,6 +39,7 @@ func isCM160(desc *usb.Descriptor) bool {
 		desc.Product == usb.ID(CM160_PRODUCT)
 }
 
+// Open initializes and returns a device
 func Open() *CM160 {
 	devices, err := ctx.ListDevices(isCM160)
 	if err != nil {

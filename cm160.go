@@ -66,6 +66,7 @@ func (c *CM160) Register(cb func(*Record)) {
 
 }
 
+// Close the device
 func (c *CM160) Close() {
 	c.device.Close()
 }

@@ -62,6 +62,7 @@ func Open() *CM160 {
 	return &CM160{device: d}
 }
 
+// Register a callback to process each Record produced by the device
 func (c *CM160) Register(cb func(*Record)) {
 
 }
